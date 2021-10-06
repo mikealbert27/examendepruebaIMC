@@ -6,7 +6,7 @@ class Persona{
     public $peso;
 
     public function calcularIMC($nombre, $estatura, $peso){
-        $imc=($peso)/($estatura*$estatura);
+        $imc=$peso/$estatura*$estatura;
         
         if($imc<18.5){
             echo ($nombre . ' tienes una altura de: '. $estatura . ', un peso de ' .$peso .'kg' . ' tu imc es: Peso saludable');
